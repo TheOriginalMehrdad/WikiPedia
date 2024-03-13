@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/mainDrawerLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/mainAppBar"
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/mainToolBar"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/mainAppBar"
             android:layout_width="match_parent"
-            android:layout_height="56dp"/>
+            android:layout_height="100dp">
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/mainToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:theme="@style/ToolBarTheme"
+                app:titleTextAppearance="@style/ToolBarTheme" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"
+        android:id="@+id/mainNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
