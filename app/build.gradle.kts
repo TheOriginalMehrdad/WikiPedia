@@ -7,6 +7,9 @@ android {
     namespace = "com.example.wikipediasample"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.wikipediasample"
         minSdk = 28
