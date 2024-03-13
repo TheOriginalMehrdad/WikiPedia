@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">WikiPediaSample</string>
+
+    <string name="app_name">WikiPedia</string>
+    <string name="openDrawer">Open drawer</string>
+    <string name="closeDrawer">Close drawer</string>
+
 </resources>

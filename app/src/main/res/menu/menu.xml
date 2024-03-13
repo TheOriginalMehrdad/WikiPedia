@@ -22,6 +22,12 @@
         tools:ignore="HardcodedText" />
 
     <item
+        android:id="@+id/menu_translator"
+        android:icon="@drawable/ic_translate"
+        android:title="Become a translator"
+        tools:ignore="HardcodedText" />
+
+    <item
         android:title="Our Websites"
         tools:ignore="HardcodedText">
 
