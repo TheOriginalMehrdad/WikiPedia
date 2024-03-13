@@ -29,10 +29,20 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            app:menu="@menu/menu_bottom_navigation"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
-        app:menu="@menu/menu"
+        app:menu="@menu/menu_drawer"
         app:headerLayout="@layout/header"
         android:layout_gravity="start"
         android:id="@+id/mainNavigationView"
