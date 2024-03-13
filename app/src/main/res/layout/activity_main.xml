@@ -32,6 +32,7 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
+        app:menu="@menu/menu"
         app:headerLayout="@layout/header"
         android:layout_gravity="start"
         android:id="@+id/mainNavigationView"
