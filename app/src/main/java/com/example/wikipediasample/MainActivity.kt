@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
 
+
                 R.id.menu_writer -> {
 
                     Toast.makeText(this, "Writer", Toast.LENGTH_SHORT).show()
