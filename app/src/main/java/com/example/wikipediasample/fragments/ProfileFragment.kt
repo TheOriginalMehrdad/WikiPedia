@@ -5,7 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.wikipediasample.R
+import com.example.wikipediasample.databinding.CardViewItemBinding
 import com.example.wikipediasample.databinding.FragmentProfileBinding
+import com.google.android.material.card.MaterialCardView
 
 class ProfileFragment : Fragment() {
 
@@ -23,5 +26,20 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        /*
+
+                val binding2 = CardViewItemBinding.inflate(layoutInflater)
+                binding2.mainCardView.isChecked = true
+
+
+                val card = view.findViewById<MaterialCardView>(R.id.mainCardView)
+                card.isChecked = true
+
+                card.setOnClickListener {
+                    card.isChecked = !card.isChecked
+                }
+        */
+
+
     }
 }
