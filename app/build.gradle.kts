@@ -52,7 +52,9 @@ dependencies {
 
 
     //Glide library to load pictures
+    //noinspection UseTomlInstead
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    //noinspection UseTomlInstead
     implementation("jp.wasabeef:glide-transformations:4.3.0")
 
 }
