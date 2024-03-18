@@ -1,5 +1,7 @@
 package com.example.wikipediasample.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +11,8 @@ import com.example.wikipediasample.R
 import com.example.wikipediasample.databinding.CardViewItemBinding
 import com.example.wikipediasample.databinding.FragmentProfileBinding
 import com.google.android.material.card.MaterialCardView
+
+const val URL_WIKIPEDIA = "https://en.wikipedia.org/wiki/History_of_Wikipedia"
 
 class ProfileFragment : Fragment() {
 
@@ -26,20 +30,12 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        /*
 
-                val binding2 = CardViewItemBinding.inflate(layoutInflater)
-                binding2.mainCardView.isChecked = true
+        binding.fabButtonProfileFragment.setOnClickListener {
 
-
-                val card = view.findViewById<MaterialCardView>(R.id.mainCardView)
-                card.isChecked = true
-
-                card.setOnClickListener {
-                    card.isChecked = !card.isChecked
-                }
-        */
-
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(URL_WIKIPEDIA))
+            startActivity(intent)
+        }
 
     }
 }

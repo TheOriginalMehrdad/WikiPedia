@@ -1,30 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <!--    <TextView-->
-    <!--        android:textColor="@color/black"-->
-    <!--        android:textSize="44sp"-->
-    <!--        android:layout_gravity="center"-->
-    <!--        android:text="Fragment Profile"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        tools:ignore="HardcodedText" />-->
+    tools:context=".activities.MainActivity">
 
 
-    <LinearLayout
-        android:layout_margin="9dp"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.MaterialComponents"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/imageViewProfileFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_wikipedia"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:layout_collapseMode="pin"
+
+                />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <include layout="@layout/card_view_item" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="13dp">
 
 
+            <TextView
+                android:id="@+id/txTitleSecondActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Wikipedia"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txSubTitleProfileFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Wikipedia, a free-content online encyclopedia "
+                />
+
+            <View
+
+                android:layout_marginTop="13dp"
+                android:background="@color/dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/txtDescriptionProfileFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="6dp"
+                android:text="Wikipedia, a free-content online encyclopedia written and maintained by a community of volunteers known as Wikipedians, began with its first edit on 15 January 2001, two days after the domain was registered. It grew out of Nupedia, a more structured free encyclopedia, as a way to allow easier and faster drafting of articles and translations.
+
+The technological and conceptual underpinnings of Wikipedia predate this; the earliest known proposal for an online encyclopedia was made by Rick Gates in 1993, and the concept of a free-as-in-freedom online encyclopedia (as distinct from mere open source) was proposed by Richard Stallman in 1998.
+
+Stallman's concept specifically included the idea that no central organization should control editing. This contrasted with contemporary digital encyclopedias such as Microsoft Encarta and Encyclopædia Britannica. In 2001, the license for Nupedia was changed to GFDL, and Jimmy Wales and Larry Sanger launched Wikipedia as a complementary project, using an online wiki as a collaborative drafting tool. While Wikipedia was initially imagined as a place to draft articles and ideas for eventual polishing in Nupedia, it quickly overtook its predecessor, becoming both draft space and home for the polished final product of a global project in hundreds of languages, inspiring a wide range of other online reference projects.
+
+In 2014, Wikipedia had approximately 495 million monthly readers. In 2015, according to comScore, Wikipedia received over 115 million monthly unique visitors from the United States alone. In September 2018, the projects saw 15.5 billion monthly page views. The concept of compiling the world's knowledge in a single location dates back to the ancient Library of Alexandria and Library of Pergamum, but the modern concept of a general-purpose, widely distributed, printed encyclopedia originated with Denis Diderot and the 18th-century French encyclopedists. The idea of using automated machinery beyond the printing press to build a more useful encyclopedia can be traced to Paul Otlet's 1934 book Traité de Documentation. Otlet also founded the Mundaneum, an institution dedicated to indexing the world's knowledge, in 1910. This concept of a machine-assisted encyclopedia was further expanded in H. G. Wells' book of essays World Brain (1938) and Vannevar Bush's future vision of the microfilm-based Memex in his essay 'As We May Think'(1945).[11] Another milestone was Ted Nelson's hypertext design Project Xanadu, which began in 1960. For more details tap on the button above"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_marginBottom="16dp"
+        android:id="@+id/fabButtonProfileFragment"
+        app:icon="@drawable/ic_wikipedia_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/blue"
+        android:layout_gravity="bottom|end" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

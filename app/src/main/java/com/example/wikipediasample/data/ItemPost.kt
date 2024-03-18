@@ -10,8 +10,8 @@ data class ItemPost(
     val textSubtitle: String,
     val textDescription: String,
 
-    // For trend fragment
 
+    // For trend fragment
     val isTrend: Boolean,
     val insight: String,
     val textWebSite: String

@@ -33,7 +33,7 @@ class ExploreFragment : Fragment(), ItemInterface {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val exploreData = arrayListOf<ItemPost>(
+        val exploreData = arrayListOf(
             ItemPost(
                 "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/jamiroquai.jpg",
                 "Jamiroquai",
@@ -136,6 +136,7 @@ class ExploreFragment : Fragment(), ItemInterface {
     }
 
     override fun onItemClicked(itemPost: ItemPost) {
+
         val intent = Intent(activity, SecondActivity::class.java)
         intent.putExtra(SEND_DATA_TO_SECOND_ACTIVITY, itemPost)
         startActivity(intent)

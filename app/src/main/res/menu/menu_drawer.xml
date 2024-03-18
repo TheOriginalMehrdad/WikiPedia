@@ -4,7 +4,6 @@
 
     <item
         android:id="@+id/menu_writer"
-        android:checked="true"
         android:icon="@drawable/ic_writer"
         android:title="Become a Writer"
         tools:ignore="HardcodedText" />
@@ -18,7 +17,7 @@
     <item
         android:id="@+id/menu_videoProducer"
         android:icon="@drawable/ic_video_maker"
-        android:title="Become a Video producer"
+        android:title="Become a film producer"
         tools:ignore="HardcodedText" />
 
     <item

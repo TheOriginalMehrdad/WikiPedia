@@ -1,7 +1,8 @@
 package com.example.wikipediasample.activities
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -10,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import cn.pedant.SweetAlert.SweetAlertDialog
 import com.example.wikipediasample.R
 import com.example.wikipediasample.databinding.ActivityMainBinding
 import com.example.wikipediasample.fragments.ExploreFragment
@@ -19,6 +21,7 @@ import com.example.wikipediasample.fragments.TrendFragment
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -63,38 +66,173 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.menu_writer -> {
 
-                    Toast.makeText(this, "Writer", Toast.LENGTH_SHORT).show()
+                    val dialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+
+                    dialog.titleText = "Attention"
+
+                    dialog.contentText = "Would you like to read about writing in Wikipedia ?"
+
+                    dialog.confirmText = "YES"
+
+                    dialog.cancelText = "NO"
+
+                    dialog.setCancelClickListener {
+
+                        dialog.dismiss()
+                    }
+
+                    dialog.setConfirmClickListener {
+
+                        openWebsite("https://en.wikipedia.org/wiki/Writer")
+                        dialog.dismiss()
+                    }
+
+                    dialog.show()
+
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                 }
 
                 R.id.menu_photograph -> {
 
-                    Toast.makeText(this, "Photographer", Toast.LENGTH_SHORT).show()
-                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+                    val dialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
 
+                    dialog.titleText = "Attention"
+
+                    dialog.contentText = "Would you like to read about photographing in Wikipedia ?"
+
+                    dialog.confirmText = "YES"
+
+                    dialog.cancelText = "NO"
+
+                    dialog.setCancelClickListener {
+
+                        dialog.dismiss()
+                    }
+
+                    dialog.setConfirmClickListener {
+
+                        openWebsite("https://en.wikipedia.org/wiki/Photographer")
+                        dialog.dismiss()
+                    }
+
+                    dialog.show()
+
+                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                 }
 
                 R.id.menu_videoProducer -> {
 
-                    Toast.makeText(this, "Video Producer", Toast.LENGTH_SHORT).show()
-                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+                    val dialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
 
+                    dialog.titleText = "Attention"
+
+                    dialog.contentText =
+                        "Would you like to read about film producing in Wikipedia ?"
+
+                    dialog.confirmText = "YES"
+
+                    dialog.cancelText = "NO"
+
+                    dialog.setCancelClickListener {
+
+                        dialog.dismiss()
+                    }
+
+                    dialog.setConfirmClickListener {
+
+                        openWebsite("https://en.wikipedia.org/wiki/Film_producer")
+                        dialog.dismiss()
+                    }
+
+                    dialog.show()
+
+                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                 }
 
                 R.id.menu_translator -> {
 
-                    Toast.makeText(this, "Translator", Toast.LENGTH_SHORT).show()
-                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+                    val dialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
 
+                    dialog.titleText = "Attention"
+
+                    dialog.contentText = "Would you like to read about translation in Wikipedia ?"
+
+                    dialog.confirmText = "YES"
+
+                    dialog.cancelText = "NO"
+
+                    dialog.setCancelClickListener {
+
+                        dialog.dismiss()
+                    }
+
+                    dialog.setConfirmClickListener {
+
+                        openWebsite("https://en.wikipedia.org/wiki/Translation")
+                        dialog.dismiss()
+                    }
+
+                    dialog.show()
+
+                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                 }
 
-                R.id.menu_open_wikipedia -> {}
+                R.id.menu_open_wikipedia -> {
 
-                R.id.menu_open_wikimedia -> {}
+                    val dialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+
+                    dialog.titleText = "Would you like to visit Wikipedia ?"
+
+                    dialog.confirmText = "YES"
+
+                    dialog.cancelText = "NO"
+
+                    dialog.setCancelClickListener {
+
+                        dialog.dismiss()
+                    }
+
+                    dialog.setConfirmClickListener {
+
+                        openWebsite("https://www.wikipedia.org/")
+                        dialog.dismiss()
+                    }
+
+                    dialog.show()
+
+                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+                }
+
+                R.id.menu_open_wikimedia -> {
+
+                    val dialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+
+                    dialog.titleText = "Would you like to visit Wikimedia ?"
+
+                    dialog.confirmText = "YES"
+
+                    dialog.cancelText = "NO"
+
+                    dialog.setCancelClickListener {
+
+                        dialog.dismiss()
+                    }
+
+                    dialog.setConfirmClickListener {
+
+                        openWebsite("https://www.wikimedia.org/")
+
+                    }
+
+                    dialog.show()
+
+                    binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+                }
             }
 
             true
         }
+
 
         // To be checked fragment explore automatically
         firstRun()
@@ -136,7 +274,6 @@ class MainActivity : AppCompatActivity() {
         val transaction = supportFragmentManager.beginTransaction()
         transaction
             .replace(R.id.frameMainContainer, fragment)
-            .addToBackStack(null)
             .commit()
     }
 
@@ -145,7 +282,14 @@ class MainActivity : AppCompatActivity() {
         replaceFragment(ExploreFragment())
         binding.mainBottomNavigation.selectedItemId = R.id.menu_btmnvg_explore
     }
+
+    private fun openWebsite(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
+    }
+
 }
+
 
 
 

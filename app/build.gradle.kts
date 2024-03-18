@@ -58,4 +58,7 @@ dependencies {
     //noinspection UseTomlInstead
     implementation("jp.wasabeef:glide-transformations:4.3.0")
 
+    //Sweet Alert Dialog library
+    implementation("com.github.f0ris.sweetalert:library:1.6.2")
+
 }

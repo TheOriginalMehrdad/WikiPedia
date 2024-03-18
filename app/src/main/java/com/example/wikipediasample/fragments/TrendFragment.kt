@@ -36,7 +36,7 @@ class TrendFragment : Fragment(), ItemInterface {
             // Trend Section =>
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/john.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/c/c6/John_Madden_%28Higher_Quality%29.jpg",
                 "John Madden",
                 "American football\ncoach and commentator\n(1936-2021)",
                 "John Earl Madden (April 10, 1936 – December 28, 2021) was an American football coach and sportscaster. He was the head coach of the Oakland Raiders of the National Football League (NFL) for ten seasons (1969–1978), and guided them to a championship in Super Bowl XI (1977). After retiring from coaching, he served as a color commentator for NFL telecasts until 2009, work for which he won 16 Sports Emmy Awards. From 1988 he lent his name, expertise and color commentary to the John Madden Football (later Madden NFL) video game series.\n" +
@@ -53,7 +53,7 @@ class TrendFragment : Fragment(), ItemInterface {
             ),
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/dont_look_up.jpg",
+                "https://upload.wikimedia.org/wikipedia/en/5/5c/Don%27t_Look_Up_2021_film.jpg",
                 "Don't Look Up (2021 film)",
                 "2021 American satirical\nscience fiction film",
                 "Don't Look Up is a 2021 American satirical science fiction film written, produced, and directed by Adam McKay. It stars Leonardo DiCaprio and Jennifer Lawrence as two astronomers attempting to warn humanity, via a media horror, about an approaching comet that will destroy human civilization. Supporting them are Rob Morgan, Jonah Hill, Mark Rylance, Tyler Perry, Timothée Chalamet, Ron Perlman, Ariana Grande, Scott Mescudi, Himesh Patel, Melanie Lynskey, with Cate Blanchett and Meryl Streep.[4] The film is a satire of government and media indifference to the climate crisis.[4][5] Grande and Mescudi also collaborated on the song \"Just Look Up\" as part of the film's soundtrack.[6] The film is dedicated to Hal Willner who died in 2020.\n" +
@@ -85,7 +85,7 @@ class TrendFragment : Fragment(), ItemInterface {
             ),
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/no_way_home.jpg",
+                "https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg",
                 "No Way Home",
                 "2021 American\nsuperhero film",
                 "Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and Spider-Man: Far From Home (2019), and the 27th film in the Marvel Cinematic Universe (MCU). The film was directed by Jon Watts and written by Chris McKenna and Erik Sommers. It stars Tom Holland as Peter Parker / Spider-Man alongside Zendaya, Benedict Cumberbatch, Jacob Batalon, Jon Favreau, Jamie Foxx, Willem Dafoe, Alfred Molina, Benedict Wong, Tony Revolori, Marisa Tomei, Andrew Garfield, and Tobey Maguire. In the film, Parker asks Dr. Stephen Strange (Cumberbatch) to make his identity as Spider-Man a secret again with magic after its public revelation in Far From Home, but this breaks open the multiverse and allows supervillains from alternate realities to enter Parker's universe.\n" +
@@ -100,7 +100,7 @@ class TrendFragment : Fragment(), ItemInterface {
             ),
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/matrix.jpg",
+                "https://upload.wikimedia.org/wikipedia/en/5/50/The_Matrix_Resurrections.jpg",
                 "Matrix Resurrections",
                 "2021 American science\nfiction action film",
                 "The Matrix Resurrections is a 2021 American science fiction action film produced, co-written, and directed by Lana Wachowski. It is the sequel to The Matrix Revolutions (2003) and the fourth and final installment in The Matrix film franchise. Keanu Reeves, Carrie-Anne Moss, Lambert Wilson, and Jada Pinkett Smith reprise their roles from the previous films, and they are joined by Yahya Abdul-Mateen II, Jessica Henwick, Jonathan Groff, Neil Patrick Harris, and Priyanka Chopra Jonas. The film is set sixty years after the events of Revolutions and follows Neo, who lives a seemingly ordinary life as a video game developer troubled with distinguishing dreams from reality. A group of rebels, with the help of a programmed version of Morpheus, free Neo from an altered Matrix and fight a new enemy that holds Trinity captive.\n" +
@@ -115,7 +115,7 @@ class TrendFragment : Fragment(), ItemInterface {
             ),
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/margaret.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Margaret_Duchess_of_Argyll_7_Allan_Warren.jpg/1170px-Margaret_Duchess_of_Argyll_7_Allan_Warren.jpg",
                 "Margaret Campbell",
                 "British socialite",
                 "Ethel Margaret Campbell, Duchess of Argyll (née Whigham, thereafter Sweeny; 1 December 1912 – 25 July 1993), was a British socialite best remembered for her much-publicised divorce from her second husband, Ian Campbell, 11th Duke of Argyll, in 1963, which featured salacious photographs and scandalous stories.\n" +
@@ -130,7 +130,7 @@ class TrendFragment : Fragment(), ItemInterface {
             ),
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/encanto.jpg",
+                "https://upload.wikimedia.org/wikipedia/en/8/83/Encanto_poster.jpg",
                 "Encanto",
                 "2021 American animated\nfilm",
                 "Encanto is a 2021 American computer-animated musical fantasy comedy film produced by Walt Disney Animation Studios and distributed by Walt Disney Studios Motion Pictures. The 60th film produced by the studio, it was directed by Jared Bush and Byron Howard, co-directed by writer Charise Castro Smith who co-wrote the screenplay with Bush, and produced by Yvett Merino and Clark Spencer, with original songs written by Lin-Manuel Miranda. The film stars the voices of Stephanie Beatriz, María Cecilia Botero, John Leguizamo, Mauro Castillo, Jessica Darrow, Angie Cepeda, Carolina Gaitán, Diane Guerrero, and Wilmer Valderrama. The film premiered at the El Capitan Theatre in Los Angeles on November 3, 2021, and was theatrically released in the United States on November 24 over a 30-day theatrical run, in response to the COVID-19 pandemic. It received positive reviews from critics but has so far underperformed commercially as of December 2021 due to the shortened release frame, grossing over \$194 million.\n" +
@@ -145,7 +145,7 @@ class TrendFragment : Fragment(), ItemInterface {
             ),
 
             ItemPost(
-                "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/boxing.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Eaton_Centre_Boxing_Day%2C_2019.jpg/1440px-Eaton_Centre_Boxing_Day%2C_2019.jpg",
                 "Boxing Day",
                 "Commonwealth nations\nholiday on 26 December",
                 "Boxing Day is a holiday celebrated after Christmas Day, occurring on the second day of Christmastide.[1] Though it originated as a holiday to give gifts to the poor, today Boxing Day is primarily known as a shopping holiday. It originated in Great Britain and is celebrated in a number of countries that previously formed part of the British Empire. The attached bank holiday or public holiday may take place either on that day or one or two days later (if necessary to ensure it falls on a weekday). Boxing Day is also concurrent with the Catholic holiday Saint Stephen's Day.\n" +
