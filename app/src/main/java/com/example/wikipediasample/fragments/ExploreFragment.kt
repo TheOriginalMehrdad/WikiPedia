@@ -98,7 +98,6 @@ class ExploreFragment : Fragment(), ItemInterface {
                 "https://en.wikipedia.org/wiki/Surrogate%27s_Courthouse"
             ),
 
-
             ItemPost(
                 "https://dunijet.ir/YaghootAndroidFiles/Wikipedia/texas_hurricane.jpg",
                 "1916 Texas hurricane",

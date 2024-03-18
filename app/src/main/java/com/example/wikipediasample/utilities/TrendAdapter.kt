@@ -17,7 +17,7 @@ class TrendAdapter(private val data: ArrayList<ItemPost>, val itemInterface: Ite
     private lateinit var binding: TrendCardViewBinding
 
     inner class TrendViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
+        
         @SuppressLint("SetTextI18n")
         fun bindViews(itemPost: ItemPost) {
 

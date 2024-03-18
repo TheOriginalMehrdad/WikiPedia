@@ -35,6 +35,7 @@ class TrendFragment : Fragment(), ItemInterface {
 
             // Trend Section =>
 
+
             ItemPost(
                 "https://upload.wikimedia.org/wikipedia/commons/c/c6/John_Madden_%28Higher_Quality%29.jpg",
                 "John Madden",

@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
 ///====================================================================================================================================
 
+
         // To disable material dark mode
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 

@@ -76,5 +76,4 @@ class SecondActivity : AppCompatActivity() {
 
         return true
     }
-
 }

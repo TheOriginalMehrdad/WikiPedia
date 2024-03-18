@@ -36,6 +36,5 @@ class ProfileFragment : Fragment() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(URL_WIKIPEDIA))
             startActivity(intent)
         }
-
     }
 }
