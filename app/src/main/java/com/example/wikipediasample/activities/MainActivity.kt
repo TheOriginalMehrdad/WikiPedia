@@ -222,6 +222,7 @@ class MainActivity : AppCompatActivity() {
                     dialog.setConfirmClickListener {
 
                         openWebsite("https://www.wikimedia.org/")
+                        dialog.dismiss()
 
                     }
 
