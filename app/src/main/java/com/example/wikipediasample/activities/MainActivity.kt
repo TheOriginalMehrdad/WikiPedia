@@ -1,16 +1,17 @@
-package com.example.wikipediasample
+package com.example.wikipediasample.activities
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.wikipediasample.R
 import com.example.wikipediasample.databinding.ActivityMainBinding
-import com.example.wikipediasample.databinding.FragmentProfileBinding
 import com.example.wikipediasample.fragments.ExploreFragment
 import com.example.wikipediasample.fragments.ProfileFragment
 import com.example.wikipediasample.fragments.TrendFragment
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-///==============================================================================================================================
+///====================================================================================================================================
 
         // To disable material dark mode
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
@@ -49,7 +50,10 @@ class MainActivity : AppCompatActivity() {
             R.string.closeDrawer
         )
 
+        // To add triple line menu toggle
         binding.mainDrawerLayout.addDrawerListener(actionBarDrawerToggle)
+        actionBarDrawerToggle
+            .drawerArrowDrawable.color = ContextCompat.getColor(this, R.color.white)
         actionBarDrawerToggle.syncState()
 
 

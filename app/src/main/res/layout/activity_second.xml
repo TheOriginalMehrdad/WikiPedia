@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.MaterialComponents"
+            app:contentScrim="@color/blue"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/imageViewSecondActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/img_jamiroquai"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:layout_collapseMode="pin"
+
+                />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="13dp">
+
+
+            <TextView
+                android:id="@+id/txTitleSecondActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Steven Paul Jobs"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txSubTitleSecondActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Steven Paul Jobs"
+                />
+
+            <View
+
+                android:layout_marginTop="13dp"
+                android:background="@color/dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/txtDescriptionSecondActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="6dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et. Neque gravida in fermentum et sollicitudin ac orci. Curabitur vitae nunc sed velit dignissim sodales. Platea dictumst vestibulum rhoncus est. Consequat nisl vel pretium lectus quam id leo. At erat pellentesque adipiscing commodo. Id neque aliquam vestibulum morbi. Tempus egestas sed sed risus pretium quam vulputate. Convallis tellus id interdum velit laoreet id donec. Faucibus ornare suspendisse sed nisi lacus. Malesuada fames ac turpis egestas integer.
+
+    Sed viverra tellus in hac habitasse platea dictumst. Turpis nunc eget lorem dolor sed viverra ipsum. Nec ultrices dui sapien eget. A condimentum vitae sapien pellentesque habitant morbi. At ultrices mi tempus imperdiet nulla. Tincidunt praesent semper feugiat nibh sed. Semper risus in hendrerit gravida. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Pulvinar pellentesque habitant morbi tristique senectus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.
+
+    Purus faucibus ornare suspendisse sed nisi. Est sit amet facilisis magna etiam tempor. Condimentum mattis pellentesque id nibh. Eget duis at tellus at urna condimentum mattis pellentesque id. Ultricies leo integer malesuada nunc. Pretium aenean pharetra magna ac. Aenean sed adipiscing diam donec. Cursus in hac habitasse platea dictumst. Id velit ut tortor pretium viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Viverra orci sagittis eu volutpat odio facilisis. Neque ornare aenean euismod elementum. Rutrum tellus pellentesque eu tincidunt tortor aliquam.
+
+    Nunc mattis enim ut tellus elementum sagittis vitae et leo. Scelerisque fermentum dui faucibus in. Lectus urna duis convallis convallis tellus id. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tortor aliquam nulla facilisi cras fermentum odio eu. Integer malesuada nunc vel risus commodo viverra. At urna condimentum mattis pellentesque. Turpis in eu mi bibendum neque egestas congue quisque egestas. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Aliquet nec ullamcorper sit amet risus nullam. Est sit amet facilisis magna etiam tempor orci eu lobortis. Sociis natoque penatibus et magnis dis. Rutrum quisque non tellus orci. Vitae auctor eu augue ut. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit.
+
+    Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Pharetra sit amet aliquam id. Eros in cursus turpis massa tincidunt. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Leo vel orci porta non. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Ut venenatis tellus in metus vulputate eu scelerisque felis. Magna fringilla urna porttitor rhoncus dolor purus non enim. Feugiat in ante metus dictum. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Vulputate dignissim suspendisse in est ante in.
+
+    Vel eros donec ac odio tempor orci dapibus. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Et tortor consequat id porta nibh venenatis cras sed felis. Sed blandit libero volutpat sed cras ornare. Volutpat diam ut venenatis tellus in metus vulputate eu. Imperdiet nulla malesuada pellentesque elit eget. Nulla facilisi morbi tempus iaculis urna id volutpat. Hendrerit gravida rutrum quisque non tellus orci. Quis viverra nibh cras pulvinar. Dictum non consectetur a erat nam at lectus urna. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Etiam sit amet nisl purus in. At elementum eu facilisis sed odio morbi quis. Massa eget egestas purus viverra accumsan. Enim ut sem viverra aliquet eget sit amet tellus. Tristique risus nec feugiat in fermentum posuere urna nec. Pellentesque habitant morbi tristique senectus et netus. Vulputate sapien nec sagittis aliquam malesuada bibendum.
+
+    Tellus orci ac auctor augue mauris. Viverra orci sagittis eu volutpat odio facilisis. Lacinia at quis risus sed vulputate odio. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Mauris augue neque gravida in fermentum et sollicitudin ac. In fermentum et sollicitudin ac orci. Lacus sed viverra tellus in hac habitasse platea. Ut consequat semper viverra nam. Diam ut venenatis tellus in metus vulputate. Sit amet cursus sit amet dictum. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Placerat vestibulum lectus mauris ultrices eros. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Quam viverra orci sagittis eu volutpat odio facilisis. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Velit dignissim sodales ut eu. Luctus accumsan tortor posuere ac ut consequat semper. Risus in hendrerit gravida rutrum quisque non tellus orci. Eget duis at tellus at urna condimentum mattis pellentesque.
+
+    Netus et malesuada fames ac turpis egestas sed tempus. Lobortis mattis aliquam faucibus purus in massa tempor. Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Quisque sagittis purus sit amet volutpat consequat. Pellentesque dignissim enim sit amet venenatis urna. In mollis nunc sed id semper risus. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Amet nisl suscipit adipiscing bibendum est ultricies integer. Ultricies mi quis hendrerit dolor. Sit amet cursus sit amet dictum sit amet justo donec. Eget mauris pharetra et ultrices. Feugiat nibh sed pulvinar proin. Sit amet volutpat consequat mauris nunc. Enim diam vulputate ut pharetra sit. Fames ac turpis egestas sed. Eget mauris pharetra et ultrices neque ornare. Massa sapien faucibus et molestie. Lacus vel facilisis volutpat est velit egestas dui id ornare.
+
+    Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Urna id volutpat lacus laoreet non curabitur gravida. Volutpat est velit egestas dui id. Aliquet bibendum enim facilisis gravida neque. Viverra tellus in hac habitasse platea dictumst vestibulum. Sed euismod nisi porta lorem. Diam vel quam elementum pulvinar etiam. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Massa tempor nec feugiat nisl pretium fusce id. Ridiculus mus mauris vitae ultricies leo integer. Duis at consectetur lorem donec massa sapien faucibus et molestie. Elit eget gravida cum sociis natoque penatibus et.
+
+    Laoreet sit amet cursus sit amet dictum sit. Purus ut faucibus pulvinar elementum. Eu volutpat odio facilisis mauris sit amet massa. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Pellentesque dignissim enim sit amet venenatis urna cursus. Quis viverra nibh cras pulvinar mattis nunc sed blandit libero. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Mi sit amet mauris commodo quis imperdiet. Lorem mollis aliquam ut porttitor. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Aliquam faucibus purus in massa tempor nec feugiat. Penatibus et magnis dis parturient.
+
+    Augue eget arcu dictum varius duis at consectetur lorem. Viverra mauris in aliquam sem fringilla ut. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. In metus vulputate eu scelerisque felis imperdiet proin. Non diam phasellus vestibulum lorem sed risus ultricies. At quis risus sed vulputate. Eget mi proin sed libero enim sed faucibus turpis in. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Pulvinar pellentesque habitant morbi tristique senectus. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Sit amet porttitor eget dolor morbi non arcu risus quis. Id aliquet risus feugiat in ante metus. Duis ultricies lacus sed turpis tincidunt.
+
+    Adipiscing tristique risus nec feugiat in fermentum. Nisl purus in mollis nunc. Accumsan tortor posuere ac ut consequat semper. Est placerat in egestas erat imperdiet sed. Viverra mauris in aliquam sem. Vitae congue eu consequat ac. Parturient montes nascetur ridiculus mus mauris. Vel facilisis volutpat est velit egestas dui id ornare arcu. Morbi tristique senectus et netus et. Neque volutpat ac tincidunt vitae. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Diam volutpat commodo sed egestas egestas. Sit amet cursus sit amet dictum sit amet justo donec. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Neque volutpat ac tincidunt vitae semper quis lectus.
+
+    Senectus et netus et malesuada fames ac turpis. Sed vulputate mi sit amet mauris commodo quis imperdiet. Vitae nunc sed velit dignissim sodales ut eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Malesuada pellentesque elit eget gravida cum sociis. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Odio tempor orci dapibus ultrices in iaculis nunc. Cursus in hac habitasse platea dictumst quisque sagittis purus. Et malesuada fames ac turpis egestas integer eget aliquet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+
+    Sem integer vitae justo eget magna fermentum. Amet luctus venenatis lectus magna fringilla urna porttitor. Fermentum iaculis eu non diam phasellus vestibulum. Tincidunt dui ut ornare lectus sit amet est. Elementum curabitur vitae nunc sed velit. Eget est lorem ipsum dolor. Faucibus purus in massa tempor nec. Nulla facilisi cras fermentum odio eu. Tortor posuere ac ut consequat semper viverra. Semper auctor neque vitae tempus. Arcu vitae elementum curabitur vitae nunc. Tincidunt vitae semper quis lectus. Fringilla ut morbi tincidunt augue. Cras adipiscing enim eu turpis egestas. Elit ut aliquam purus sit amet luctus venenatis. Eget duis at tellus at urna condimentum mattis pellentesque. Imperdiet massa tincidunt nunc pulvinar sapien. Gravida dictum fusce ut placerat orci. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
+
+    Dui id ornare arcu odio ut sem nulla pharetra diam. Elementum nisi quis eleifend quam adipiscing vitae proin. Mus mauris vitae ultricies leo integer malesuada nunc. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Praesent elementum facilisis leo vel fringilla est ullamcorper. Dictum at tempor commodo ullamcorper. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Sagittis aliquam malesuada bibendum arcu vitae. Praesent tristique magna sit amet purus. Vitae tempus quam pellentesque nec nam aliquam sem et.
+
+    Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Nibh cras pulvinar mattis nunc sed. In ornare quam viverra orci sagittis eu volutpat. Pretium fusce id velit ut tortor pretium viverra suspendisse. Vel quam elementum pulvinar etiam non quam lacus suspendisse. Integer enim neque volutpat ac tincidunt. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Dolor sit amet consectetur adipiscing elit. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Orci a scelerisque purus semper eget duis at tellus at. Id eu nisl nunc mi. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. In hendrerit gravida rutrum quisque. Pharetra diam sit amet nisl suscipit adipiscing bibendum est.
+
+    Congue nisi vitae suscipit tellus mauris a. Sed viverra tellus in hac habitasse. Amet venenatis urna cursus eget nunc. Iaculis urna id volutpat lacus laoreet non. Ipsum consequat nisl vel pretium. Neque egestas congue quisque egestas diam in arcu. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Sed turpis tincidunt id aliquet risus feugiat in. Eu non diam phasellus vestibulum lorem sed risus ultricies. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. In massa tempor nec feugiat nisl pretium fusce id. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. In metus vulputate eu scelerisque felis imperdiet. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Lectus nulla at volutpat diam. Ornare quam viverra orci sagittis. Pellentesque pulvinar pellentesque habitant morbi. Habitasse platea dictumst vestibulum rhoncus est pellentesque.
+
+    Dui vivamus arcu felis bibendum ut. Nunc sed id semper risus in hendrerit gravida rutrum. Ullamcorper eget nulla facilisi etiam dignissim. Ut lectus arcu bibendum at varius vel. Diam maecenas sed enim ut sem viverra aliquet eget sit. Augue lacus viverra vitae congue eu. Scelerisque eleifend donec pretium vulputate sapien nec. Eget lorem dolor sed viverra ipsum. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Proin nibh nisl condimentum id venenatis a. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Magna etiam tempor orci eu lobortis elementum nibh tellus. Quis hendrerit dolor magna eget est lorem ipsum. Elementum sagittis vitae et leo duis. Praesent semper feugiat nibh sed pulvinar proin gravida.
+
+    Amet purus gravida quis blandit turpis cursus in hac. Nec ullamcorper sit amet risus nullam. Risus quis varius quam quisque id diam vel. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Porta nibh venenatis cras sed felis eget velit. Enim sed faucibus turpis in eu mi bibendum neque egestas. Parturient montes nascetur ridiculus mus. A cras semper auctor neque vitae. Ante in nibh mauris cursus mattis molestie a. Feugiat in ante metus dictum at tempor commodo. Sit amet purus gravida quis blandit turpis cursus in hac. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Scelerisque varius morbi enim nunc faucibus a pellentesque sit. Turpis egestas integer eget aliquet. Vivamus arcu felis bibendum ut tristique et egestas. Morbi tincidunt augue interdum velit euismod in. Ut etiam sit amet nisl purus in mollis.
+
+    Tempor orci dapibus ultrices in iaculis nunc. In arcu cursus euismod quis viverra nibh cras. A diam sollicitudin tempor id. Pellentesque diam volutpat commodo sed egestas egestas. Tristique et egestas quis ipsum suspendisse. Cras semper auctor neque vitae. Nisl nunc mi ipsum faucibus vitae aliquet nec. In cursus turpis massa tincidunt dui ut ornare lectus sit. Id volutpat lacus laoreet non. In nisl nisi scelerisque eu ultrices vitae auctor eu.
+
+    Tristique senectus et netus et malesuada fames. Integer vitae justo eget magna fermentum iaculis eu non diam. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Duis convallis convallis tellus id interdum velit laoreet id. Convallis aenean et tortor at risus viverra adipiscing. Risus quis varius quam quisque id diam vel quam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Tortor vitae purus faucibus ornare. Orci sagittis eu volutpat odio facilisis mauris. Enim eu turpis egestas pretium aenean. In ornare quam viverra orci. Ut etiam sit amet nisl purus.
+
+    Sed vulputate mi sit amet mauris commodo quis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Vitae semper quis lectus nulla. Sagittis purus sit amet volutpat consequat mauris nunc congue. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Nulla facilisi morbi tempus iaculis urna. Consequat semper viverra nam libero justo laoreet sit. Vel eros donec ac odio tempor orci dapibus ultrices in. Nisl nisi scelerisque eu ultrices. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Lectus sit amet est placerat in egestas. Eget gravida cum sociis natoque penatibus et magnis dis. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Varius vel pharetra vel turpis nunc eget. At quis risus sed vulputate odio. Habitant morbi tristique senectus et netus et malesuada. Mattis vulputate enim nulla aliquet.
+
+    Nam at lectus urna duis convallis. At erat pellentesque adipiscing commodo elit at imperdiet. Maecenas accumsan lacus vel facilisis volutpat est. Ante in nibh mauris cursus mattis. Volutpat odio facilisis mauris sit amet massa. In hendrerit gravida rutrum quisque non tellus orci. Mi tempus imperdiet nulla malesuada pellentesque. Amet mauris commodo quis imperdiet massa. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Eu scelerisque felis imperdiet proin fermentum. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Morbi tempus iaculis urna id volutpat lacus laoreet non. Integer quis auctor elit sed vulputate mi sit. Quam lacus suspendisse faucibus interdum posuere lorem. Habitant morbi tristique senectus et netus et. Egestas pretium aenean pharetra magna ac. Odio tempor orci dapibus ultrices in iaculis nunc sed. Massa tincidunt dui ut ornare lectus sit amet. Pretium fusce id velit ut tortor pretium viverra. Et netus et malesuada fames ac.
+
+    Tempor id eu nisl nunc. Ut sem viverra aliquet eget sit. Natoque penatibus et magnis dis. Diam quam nulla porttitor massa id neque aliquam vestibulum. Elementum integer enim neque volutpat ac tincidunt. Eget arcu dictum varius duis. Sed arcu non odio euismod lacinia at quis risus sed. Maecenas accumsan lacus vel facilisis volutpat est velit egestas dui. Rhoncus mattis rhoncus urna neque viverra justo. Lectus vestibulum mattis ullamcorper velit sed. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam. Arcu dictum varius duis at consectetur lorem donec massa. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Adipiscing bibendum est ultricies integer. In cursus turpis massa tincidunt.
+
+    Proin sagittis nisl rhoncus mattis rhoncus urna neque. Consectetur adipiscing elit duis tristique sollicitudin. Pretium quam vulputate dignissim suspendisse in est ante in. Est velit egestas dui id ornare arcu. Pretium lectus quam id leo in vitae turpis massa. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sed risus pretium quam vulputate dignissim suspendisse. Pellentesque sit amet porttitor eget dolor morbi non arcu. Placerat vestibulum lectus mauris ultrices. Morbi leo urna molestie at elementum eu facilisis. Urna nec tincidunt praesent semper. Platea dictumst quisque sagittis purus sit amet volutpat. Elementum nisi quis eleifend quam adipiscing vitae proin. Eget arcu dictum varius duis at consectetur lorem. Placerat vestibulum lectus mauris ultrices eros in cursus. Ut diam quam nulla porttitor. Quis lectus nulla at volutpat.
+
+    Augue ut lectus arcu bibendum at varius. Volutpat ac tincidunt vitae semper. Nunc congue nisi vitae suscipit tellus. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Enim ut sem viverra aliquet eget sit amet. Egestas sed sed risus pretium quam. Est ante in nibh mauris cursus mattis molestie. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Congue nisi vitae suscipit tellus. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Pharetra pharetra massa massa ultricies."
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabButtonSecondActivity"
+        app:icon="@drawable/ic_wikipedia_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/blue"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

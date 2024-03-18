@@ -1,4 +1,4 @@
-package com.example.wikipediasample.adapters
+package com.example.wikipediasample.utilities
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.wikipediasample.data.ItemPost
-import com.example.wikipediasample.databinding.FragmentTrendBinding
 import com.example.wikipediasample.databinding.TrendCardViewBinding
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
 
-class TrendAdapter(private val data: ArrayList<ItemPost>) :
+class TrendAdapter(private val data: ArrayList<ItemPost>, val itemInterface: ItemInterface) :
     RecyclerView.Adapter<TrendAdapter.TrendViewHolder>() {
 
     private lateinit var binding: TrendCardViewBinding
@@ -32,6 +31,8 @@ class TrendAdapter(private val data: ArrayList<ItemPost>) :
                 .load(itemPost.urlImage)
                 .transform(RoundedCornersTransformation(22,1))
                 .into(binding.imageViewTrendItem)
+
+            itemView.setOnClickListener { itemInterface.onItemClicked(itemPost) }
         }
     }
 

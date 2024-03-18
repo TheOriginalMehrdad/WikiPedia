@@ -1,4 +1,4 @@
-package com.example.wikipediasample.adapters
+package com.example.wikipediasample.utilities
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.example.wikipediasample.data.ItemPost
 import com.example.wikipediasample.databinding.ExploreCardViewBinding
 
-class ExploreAdapter(private val data: ArrayList<ItemPost>) :
+class ExploreAdapter(private val data: ArrayList<ItemPost>, val itemInterface: ItemInterface) :
     RecyclerView.Adapter<ExploreAdapter.ExploreViewHolder>() {
 
     private lateinit var binding: ExploreCardViewBinding
@@ -25,6 +25,8 @@ class ExploreAdapter(private val data: ArrayList<ItemPost>) :
                 .with(itemView.context)
                 .load(itemPost.urlImage)
                 .into(binding.imgExplore)
+
+            itemView.setOnClickListener { itemInterface.onItemClicked(itemPost) }
         }
     }
 
